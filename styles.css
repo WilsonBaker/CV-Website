@@ -33,7 +33,7 @@ body {
 }
 
 .resume .sidebar {
-  width: 280px;
+  width: 300px;
   background: #3498db;
 }
 
@@ -44,4 +44,53 @@ body {
 
 .resume .sidebar .resume_content {
   padding: 0 25px;
+}
+
+.resume .title {
+  margin-bottom: 15px;
+}
+
+.resume .sidebar_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #dfe6e9;
+}
+
+.resume .sidebar .sidebar_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .sidebar ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.resume .sidebar ul li:last-child {
+  margin-bottom: 0;
+}
+
+.resume .sidebar ul li .icon {
+  width: 30px;
+  height: 30px;
+  background: #dfe6e9;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+  color: #2d3436;
+}
+
+.resume .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.resume .sidebar ul li .data {
+  color: #dfe6e9;
+}
+
+.resume .sidebar .data a {
+  color: #dfe6e9;
 }
