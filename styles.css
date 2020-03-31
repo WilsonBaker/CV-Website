@@ -94,3 +94,27 @@ body {
 .resume .sidebar .data a {
   color: #dfe6e9;
 }
+
+.resume .sidebar .skills ul li {
+  justify-content: space-between;
+}
+
+.resume .sidebar .skills ul li .skill_name {
+  width: 25%;
+}
+
+.resume .sidebar .skills ul li .skill_level {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #0984e3;
+  position: relative;
+}
+
+.resume .sidebar .skills ul li .skill_level span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #dfe6e9;
+}
