@@ -50,12 +50,12 @@ body {
   margin-bottom: 15px;
 }
 
-.resume .sidebar_item {
+.resume .resume_item {
   padding: 25px 0;
   border-bottom: 2px solid #dfe6e9;
 }
 
-.resume .sidebar .sidebar_item:last-child {
+.resume .sidebar .resume_item:last-child {
   border-bottom: 0px;
 }
 
@@ -117,4 +117,74 @@ body {
   left: 0;
   height: 100%;
   background: #dfe6e9;
+}
+
+.resume .resume_main {
+  width: 500px;
+  background: #dfe6e9;
+  padding: 25px;
+}
+
+.resume .resume_main .title {
+  color: #0984e3;
+}
+
+.resume .resume_main {
+  color: #2d3436;
+}
+
+.resume .resume_main .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #0984e3;
+}
+
+.resume .resume_main .resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .resume_main .work_exp ul,
+.resume .resume_main .education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.resume .resume_main ul li {
+  position: relative;
+}
+
+.resume .resume_main ul li .dates {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.resume .resume_main ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume_main ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume .resume_main .work_exp ul li:before,
+.resume .resume_main .education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #74b9ff;
+}
+
+.resume .resume_main .work_exp ul li:after,
+.resume .resume_main .education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 110%;
+  background: #74b9ff;
 }
