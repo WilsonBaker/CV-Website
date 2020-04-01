@@ -143,7 +143,8 @@ body {
 }
 
 .resume .resume_main .work_exp ul,
-.resume .resume_main .education ul {
+.resume .resume_main .education ul,
+.resume .resume_main .excellence ul {
   padding-left: 40px;
   overflow: hidden;
 }
@@ -162,12 +163,17 @@ body {
   margin-bottom: 20px;
 }
 
+.resume .resume_main .excellence ul li .info {
+  margin-bottom: 10px;
+}
+
 .resume .resume_main ul li:last-child .info {
   margin-bottom: 0;
 }
 
 .resume .resume_main .work_exp ul li:before,
-.resume .resume_main .education ul li:before {
+.resume .resume_main .education ul li:before,
+.resume .resume_main .excellence ul li:before {
   content: "";
   position: absolute;
   top: 5px;
@@ -179,12 +185,21 @@ body {
 }
 
 .resume .resume_main .work_exp ul li:after,
-.resume .resume_main .education ul li:after {
+.resume .resume_main .education ul li:after,
+.resume .resume_main .excellence ul li:after {
   content: "";
   position: absolute;
   top: 14px;
   left: -21px;
   width: 2px;
-  height: 110%;
+  height: calc(100% + 12px);
   background: #74b9ff;
+}
+
+.resume .resume_main .excellence ul li:after {
+  height: calc(100% + 3px)
+}
+
+.resume .resume_main .excellence ul li:last-child:after {
+  height: 0;
 }
