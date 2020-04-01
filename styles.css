@@ -119,6 +119,50 @@ body {
   background: #dfe6e9;
 }
 
+.resume .sidebar .projects .project_click {
+  text-align: center;
+}
+
+.resume .sidebar .projects .project_click button {
+  margin-top: 10px;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  color: #dfe6e9;
+  background: none;
+  border: 4px solid;
+  cursor: pointer;
+  position: relative;
+}
+
+.resume .sidebar .projects .project_click button::before,
+.resume .sidebar .projects .project_click button::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: #3498db;
+  transform: skewX(50deg);
+  transition: .3s linear;
+}
+
+.resume .sidebar .projects .project_click button::before {
+  top: -4px;
+  left: 10%
+}
+
+.resume .sidebar .projects .project_click button::after {
+  bottom: -4px;
+  right: 10%
+}
+
+.resume .sidebar .projects .project_click button:hover::before {
+  left: 80%
+}
+
+.resume .sidebar .projects .project_click button:hover::after {
+  right: 80%
+}
 .resume .resume_main {
   width: 500px;
   background: #dfe6e9;
@@ -171,9 +215,9 @@ body {
   margin-bottom: 0;
 }
 
-.resume .resume_main .work_exp ul li:before,
-.resume .resume_main .education ul li:before,
-.resume .resume_main .excellence ul li:before {
+.resume .resume_main .work_exp ul li::before,
+.resume .resume_main .education ul li::before,
+.resume .resume_main .excellence ul li::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -184,9 +228,9 @@ body {
   border: 2px solid #74b9ff;
 }
 
-.resume .resume_main .work_exp ul li:after,
-.resume .resume_main .education ul li:after,
-.resume .resume_main .excellence ul li:after {
+.resume .resume_main .work_exp ul li::after,
+.resume .resume_main .education ul li::after,
+.resume .resume_main .excellence ul li::after {
   content: "";
   position: absolute;
   top: 14px;
@@ -196,10 +240,10 @@ body {
   background: #74b9ff;
 }
 
-.resume .resume_main .excellence ul li:after {
+.resume .resume_main .excellence ul li::after {
   height: calc(100% + 3px)
 }
 
-.resume .resume_main .excellence ul li:last-child:after {
+.resume .resume_main .excellence ul li:last-child::after {
   height: 0;
 }
